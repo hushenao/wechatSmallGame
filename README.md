@@ -2,13 +2,10 @@
 ===
 仿照微信小游戏官方demo开发，其中libs中的Symbol和适配器全部用的官方的demo<br>
 ## 下载<br>
-    git clone https://github.com/hushenao/wechatSmallGame.git
-<br>
-## 预览
-<br>
+    git clone https://github.com/hushenao/wechatSmallGame.git<br>
+## 预览<br>
 1、下载微信开发者工具，必须使用官方指定版本[链接](https://mp.weixin.qq.com/debug/wxagame/dev/devtools/download.html?t=2018115 "https://mp.weixin.qq.com/debug/wxagame/dev/devtools/download.html?t=2018115")<br>
 2、然后在项目文件夹下创建一个小游戏的项目（如果这个文件是空的，会自动生成一个官方的demo，就是打飞机的）<br>
-<br>
 ![](https://mp.weixin.qq.com/debug/wxagame/dev/tutorial/images/select-game.jpg)
 
 ## 源码目录介绍
