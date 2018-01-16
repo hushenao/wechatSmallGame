@@ -34,7 +34,7 @@ export default class {
     return !!(
          (this.x + this.width) > (sp.x)
       && (this.x + this.width / 2) < (sp.x + sp.width)
-      && (this.y + this.height / 2) > (sp.y)
+      && (this.y + this.height - 5) > (sp.y)
       && (this.y + 5) < (sp.y + sp.height)
     )
   }

@@ -26,6 +26,9 @@ export default class Player extends Animation {
     // 触摸屏幕的时间
     this.touchTime = 0
 
+    // 设置小鸟的上升距离
+    this.playerUpDistance = 20
+
     // 距离上一次点击下落的时间
     this.fallenTime = 0
 
@@ -56,6 +59,12 @@ export default class Player extends Animation {
 
       // 设置游戏状态为结束
       databus.gameOver = true
+    } else if (this.y <= 0) {
+      // 如果小鸟冲出上边界，判定为撞墙
+      this.y = 0
+
+      // 设置游戏状态为结束
+      databus.gameOver = true
     } else {
       // 自由落体计算  s = gt方 / 2
       this.y = this.y + 9.8 * Math.pow(this.fallenTime, 2) / 2
@@ -74,7 +83,10 @@ export default class Player extends Animation {
    */
   touchStartFun() {
     this.touchTime = new Date().getTime()
-    this.y -= 20
+
+    this.y        -= this.playerUpDistance
+    
+    // 停止没有完成的动画，重新开始动画
     this.stop()
     this.playAnimation(0)
   }
