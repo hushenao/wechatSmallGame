@@ -1,10 +1,7 @@
 仿微信小游戏官方实现的像素鸟游戏
 ===
-<br>
 仿照微信小游戏官方demo开发，其中libs中的Symbol和适配器全部用的官方的demo<br>
-<br>
-## 下载
-<br>
+## 下载<br>
     git clone https://github.com/hushenao/wechatSmallGame.git
 <br>
 ## 预览
