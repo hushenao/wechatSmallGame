@@ -56,7 +56,7 @@ export default class Main {
    * 帧数取模定义成生成的频率
    */
   wallGenerate() {
-    if (databus.frame % 120 === 0) {
+    if (databus.frame % 140 === 0) {
       let wall = databus.pool.getItemByClass('wall', Wall)
       wall.init(2)
       databus.walls.push(wall)

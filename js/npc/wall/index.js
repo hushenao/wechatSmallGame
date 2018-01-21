@@ -7,7 +7,7 @@ const screenWidth   = window.innerWidth
 const screenHeight  = window.innerHeight
 
 const WALL_IMG_SRC  = 'images/wall.jpg'
-const WALL_WIDTH    = screenWidth / 10
+const WALL_WIDTH    = screenWidth / 8
 
 const wallConf = {
   ok: 20,       // 中间可通过的距离
