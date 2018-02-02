@@ -7,7 +7,10 @@
 1、下载微信开发者工具，必须使用官方指定版本[链接](https://mp.weixin.qq.com/debug/wxagame/dev/devtools/download.html?t=2018115 "https://mp.weixin.qq.com/debug/wxagame/dev/devtools/download.html?t=2018115")<br>
 2、然后在项目文件夹下创建一个小游戏的项目（如果这个文件是空的，会自动生成一个官方的demo，就是打飞机的）<br>
 ![](https://mp.weixin.qq.com/debug/wxagame/dev/tutorial/images/select-game.jpg)
-
+## 效果图<br>
+![](https://mrecycle.layib.com/images/niao1.png)<br>
+![](https://mrecycle.layib.com/images/niao2.png)<br>
+![](https://mrecycle.layib.com/images/niao3.png)
 ## 源码目录介绍
 ```
 ./js
