@@ -6,44 +6,44 @@ let instance
  * 全局状态管理器
  */
 export default class DataBus {
-  constructor() {
-    if (instance) return instance
-    
-    instance  = this
+    constructor() {
+        if (instance) return instance
 
-    this.pool = new Pool()
+        instance = this
 
-    this.reset()
-  }
+        this.pool = new Pool()
 
-  reset() {
-    // 当前的帧数
-    this.frame      = 0
+        this.reset()
+    }
 
-    // 当前的得分数
-    this.score      = 0
+    reset() {
+        // 当前的帧数
+        this.frame = 0
 
-    // 需要执行动画
-    this.animations = []
+        // 当前的得分数
+        this.score = 0
 
-    // 游戏开始和结束
-    this.gameOver   = false
-    this.startGame  = false
+        // 需要执行动画
+        this.animations = []
 
-    // 所有墙的集合
-    this.walls      = []
-    
-  }
+        // 游戏开始和结束
+        this.gameOver = false
+        this.startGame = false
 
-  /**
-   * 回收墙，进入对象池
-   * 此后不进入帧循环
-   */
-  removeWall(wall) {
-    let temp = this.walls.shift()
+        // 所有墙的集合
+        this.walls = []
 
-    temp.visible = false
+    }
 
-    this.pool.recover('wall', wall)
-  }
+    /**
+     * 回收墙，进入对象池
+     * 此后不进入帧循环
+     */
+    removeWall(wall) {
+        let temp = this.walls.shift()
+
+        temp.visible = false
+
+        this.pool.recover('wall', wall)
+    }
 }
